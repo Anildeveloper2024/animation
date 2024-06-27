@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 15px;
+            width: 28px;
+            margin: 1px;
+            animation-name: changecolor;
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes changecolor{
+            from{
+                background-color: brown;
+                transform: translateY(0px);
+                height: 150px;
+                
+            }
+            to{
+                background-color: blue;
+                transform: translateY(0px);
+            }
+        }
+        .mn{
+            display: flex;
+            flex-direction: row;
+            margin-top: 100px;
+            margin-left: 100px;
+            height: 300px;
+            position: relative;
+        }
+        .div1{
+            background-color: pink;
+            animation-delay: 0.1s;
+            position: absolute;
+            bottom: 0;
+            left:0px;
+        }
+        .div2{
+            background-color: blue;
+            animation-delay: 0.3s;
+            position: absolute;
+            bottom: 0;
+            left:30px;
+        }
+        .div3{
+            background-color: yellow;
+            animation-delay: 0.5s;
+            position: absolute;
+            bottom: 0;
+            left:60px;
+        }
+        .div4{
+            background-color: blue;
+            animation-delay: 0.7s;
+            position: absolute;
+            bottom: 0;
+            left:90px;
+        }
+        .div5{
+            background-color: brown;
+            animation-delay: 0.9s;
+            position: absolute;
+            bottom: 0;
+            left:120px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="mn">
+
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+    </section>
+</body>
+</html>
